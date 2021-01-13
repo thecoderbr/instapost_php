@@ -18,7 +18,7 @@ $matricula = $_POST["matricula"] ?? "";
 $tipoMarcacao = $_POST["tipoMarcacao"];
 
 try{
-    $conn = new mysqli("localhost:3307", "root", "coti", "thecoder");
+    $conn = new mysqli("localhost", "root", "", "thecoder");
     if ($conn->connect_errno) {
         printf("Não pode conectar no banco de dados");
         exit();
